@@ -16,6 +16,7 @@ packages=(
   	thefuck
   	zoxide
 	ripgrep
+	powerlevel10k
 	npm
 	lazygit
 	kubectl
@@ -23,9 +24,11 @@ packages=(
 	brew install fluxcd/tap/flux
 )
 
+
 for package in "${packages[@]}"; do
 	echo "Installing $package..."
 	/home/linuxbrew/.linuxbrew/bin/brew install "$package"
 done
 
+echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
 echo "All packages from the setup script have been installed."
