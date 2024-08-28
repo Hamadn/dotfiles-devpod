@@ -4,6 +4,7 @@ mkdir -p "$XDG_CONFIG_HOME"
 
 ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
 ln -sf "$PWD/.tmux.conf" "$HOME"/.tmux.conf
+ln -sf "$PWD/.p10k.zsh" "$HOME"/.p10k.zsh
 
 curl -o "$HOME/.zshrc" https://raw.githubusercontent.com/Hamadn/dotfiles/main/.zshrc
 curl -o "$HOME/.zprofile" https://raw.githubusercontent.com/Hamadn/dotfiles/main/.zprofile
