@@ -10,11 +10,11 @@ curl -o "$HOME/.zprofile" https://raw.githubusercontent.com/Hamadn/dotfiles/main
 
 packages=(
 	fd
-  fzf
-  eza
-  bat
-  thefuck
-  zoxide
+  	fzf
+  	eza
+  	bat
+  	thefuck
+  	zoxide
 	ripgrep
 	npm
 	lazygit
