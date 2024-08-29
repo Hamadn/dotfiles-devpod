@@ -23,6 +23,8 @@ packages=(
 	lazygit
 	kubectl
 	derailed/k9s/k9s
+	zsh-autosuggestions
+	zsh-syntax-highlighting
 )
 
 
@@ -31,5 +33,7 @@ for package in "${packages[@]}"; do
 	/home/linuxbrew/.linuxbrew/bin/brew install "$package"
 done
 
-echo "source /home/linuxbrew/.linuxbrew/share/powerlevel10k/powerlevel10k.zsh-theme" >> $HOME/.zshrc 
+echo "source /home/linuxbrew/.linuxbrew/share/powerlevel10k/powerlevel10k.zsh-theme" >> $HOME/.zshrc
+echo "source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $HOME/.zshrc
+echo "source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc
 echo "All packages from the setup script have been installed."
