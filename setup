@@ -31,5 +31,5 @@ for package in "${packages[@]}"; do
 	/home/linuxbrew/.linuxbrew/bin/brew install "$package"
 done
 
-echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> .zshrc 
+echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> $HOME/.zshrc 
 echo "All packages from the setup script have been installed."
